@@ -1,3 +1,6 @@
+import tkinter as tk
+import random
+
 def play_game(player_choice):
     computer_choice = random.choice(['rock', 'paper', 'scissors'])
     
@@ -38,6 +41,5 @@ scissors_button.pack(side="left", padx=10)
 
 result_label = tk.Label(root, text="", font=result_font, bg="#e0e0e0", height=4)
 result_label.pack(pady=20)
-
 
 root.mainloop()
